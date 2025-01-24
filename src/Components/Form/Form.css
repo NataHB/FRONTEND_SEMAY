@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 275px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+label{
+    font-weight: bold;
+    padding: 3px;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.error{
+    color: #ff7700;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    form{
+        width: 100%;
+    }
+    
+}

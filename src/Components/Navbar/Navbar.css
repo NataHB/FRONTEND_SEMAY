@@ -1,0 +1,140 @@
+/* Navbar general */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 10%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  position: sticky;
+  gap: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 9px #00000039;
+  z-index: 1000;
+}
+
+/* Navbar header */
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Botón de menú hamburguesa */
+.hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  padding: unset;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+}
+
+/* Links principales */
+.nav-links {
+  list-style: none;
+  display: none; 
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: #323232d5;
+}
+
+.nav-links a {
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #323232d5;
+}
+
+/* Dropdown general */
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  max-height: 50vh;
+  overflow-y: auto;
+  top: 102%;
+  left: 0;
+  background-color: #ffffff;
+  display: none; /* Por defecto cerrado */
+  padding: 20px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.dropdown-menu.open {
+  display: block; /* Se abre si la clase 'open' está presente */
+}
+
+
+.dropdown-menu li {
+  cursor: pointer;
+  padding: 15px 15px;
+}
+
+.dropdown-menu li a {
+  color: #000000;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    padding: 20px 5%;
+  }
+
+  .hamburger {
+    display: none; 
+  }
+
+  .nav-links {
+    display: flex; 
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav-links .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 102%;
+    background: #ffffff;
+    padding: 10px;
+    display: none;
+  }
+
+  .nav-links .dropdown-menu.open {
+    display: block;
+  }
+}

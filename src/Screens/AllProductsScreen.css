@@ -1,0 +1,17 @@
+.all-products{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.all-products h1{
+    font-size: 23px;
+}
+
+@media screen and (max-width: 1000px) {
+    .all-products{    
+        padding: 10% 10%;
+    }
+}
