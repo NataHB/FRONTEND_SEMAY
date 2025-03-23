@@ -33,6 +33,8 @@ button{
 
 button:hover{
     background: #323232d5;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
 }
 
 button a{
@@ -58,6 +60,11 @@ button a{
     background-color: #ffffff;
     padding-bottom: 15px;
     justify-content: space-between;
+}
+
+.product-card :hover{
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
 }
 
 .product-card img{

@@ -17,7 +17,6 @@ const Home = () => {
         <section className='categorias-section'>
             <h2>Encontra lo que buscas</h2>
             <div className='categorias-section-container'>
-                <div className='categoria-container'>
                     <div className='categoria'>
                         <img src='/img/filter.hombre.jpg' alt='Abrigos'/>
                         <button><Link to={'/category/Abrigos'}>Abrigos</Link></button>
@@ -26,8 +25,6 @@ const Home = () => {
                         <img src='/img/filter.mujer.jpg' alt='Sueter'/>
                         <button><Link to={'/category/Sueters'}>Sueters</Link></button>
                     </div>
-                </div>
-                <div className='categoria-container'>
                     <div className='categoria'>
                         <img src='/img/filter.remeras.jpg' alt='Remeras'/>
                         <button><Link to={'/category/Remeras'}>Remeras</Link></button>                    
@@ -37,7 +34,6 @@ const Home = () => {
                     <button><Link to={'/category/Camisas'}>Camisas</Link></button>                
                 </div>
                 </div>
-            </div>
         </section>
         <section className='destacado'>
             <h2>Nuestros productos</h2>
